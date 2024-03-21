@@ -1,0 +1,15 @@
+<template>
+    <article class="slds-card" style="height:100%;width:100%;">
+        <div class="slds-grid slds-wrap slds-size_12-of-12">
+            <lightning-input class="slds-size_5-of-12" type="text" variant="standard" name="name" value={recordName} label="Full Name" placeholder="type here..." onchange={handleNameChange}></lightning-input>
+            <lightning-input class="slds-size_5-of-12" type="number" variant="standard" name="name" value={age} label="Age" placeholder="type here..." onchange={handleAgeChange}></lightning-input>
+            <lightning-combobox label="Choose Time" name="chooseTime" options={options} value={chooseTime} onchange={handleTimeChange}></lightning-combobox>
+            <lightning-input class="slds-size_5-of-12" type="checkbox" variant="standard" name="name" label="Yes"></lightning-input>
+            <lightning-input class="slds-size_5-of-12" type="number" variant="standard" name="name" label="Mobile Number" value={mobileNumber} placeholder="type here..." onchange={handleMobileNumber}></lightning-input>
+            <lightning-textarea class="slds-size_5-of-12" name="inputname" label="Address" placeholder="type here..." value={address} onchange={handleAddress}></lightning-textarea>
+        </div>
+        <div class="slds-align_absolute-center">
+            <lightning-button variant="brand" label="Create" title="titleName" onclick={handleSubmit}></lightning-button>
+        </div>
+    </article>
+</template>
